@@ -1,26 +1,26 @@
-# Exercise 1
+# Exercise 1 - FP01Exercises.java
 
 Print Only Odd Numbers from the List
 
-# Exercise 2
+# Exercise 2 - FP01Exercises.java
 
 Print All Courses individually
 
 `List<String> courses = List.of("Spring", "Spring Boot", "API" , "Microservices", "AWS", "PCF","Azure", "Docker", "Kubernetes")`
 
-# Exercise 3
+# Exercise 3 - FP01Exercises.java
 
 Print Courses Containing the word "Spring"
 
-# Exercise 4
+# Exercise 4 - FP01Exercises.java
 
 Print Courses Whose Name has atleast 4 letters
 
-# Exercise 5
+# Exercise 5  - FP01Exercises.java
 
 Print the cubes of odd numbers
 
-# Exercise 6
+# Exercise 6  - FP01Exercises.java
 
 Print the number of characters in each course name
 
