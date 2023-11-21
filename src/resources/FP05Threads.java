@@ -1,4 +1,4 @@
-package programming;
+package resources;
 
 public class FP05Threads {
 
@@ -8,7 +8,7 @@ public class FP05Threads {
 			@Override
 			public void run() {
 				for (int i = 0; i < 10000; i++) {
-					System.out.println(Thread.currentThread().getId() + ":" + i);
+					System.out.println(Thread.currentThread().getName());
 
 				}
 
@@ -18,12 +18,11 @@ public class FP05Threads {
 
 		Runnable runnable2 = () -> {
 			for (int i = 0; i < 10000; i++) {
-				System.out.println(Thread.currentThread().getId() + ":" + i);
-
+				System.out.println(Thread.currentThread().getName());
 			}
 		};
 
-		Thread thread = new Thread(runnable2);
+		Thread thread = new Thread(runnable);
 		thread.start();
 
 		Thread thread1 = new Thread(runnable2);

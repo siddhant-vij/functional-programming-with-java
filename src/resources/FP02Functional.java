@@ -1,4 +1,4 @@
-package programming;
+package resources;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -15,7 +15,9 @@ public class FP02Functional {
 										.filter(x -> x%2==0)
 										.collect(Collectors.toList());
 		
-		//System.out.println(squaredNumbers);
+		System.out.println(squaredNumbers);
+		
+		System.out.println("-------------------");
 		System.out.println(evenNumbersOnly);
 		
 		// 0 12
@@ -29,9 +31,10 @@ public class FP02Functional {
 		// 62 15
 		// 77
 		
-		// int sum = addListFunctional(numbers);
-		//
-		// System.out.println(sum);
+		System.out.println("-------------------");
+		int sum = addListFunctional(numbers);
+		
+		System.out.println(sum);
 
 	}
 	
@@ -57,8 +60,8 @@ public class FP02Functional {
 		  // 0 and FP02Functional::sum
 		return numbers.stream()
 				.parallel()
-		  //.reduce(0, FP02Functional::sum);	
+		  .reduce(0, FP02Functional::sum);	
 		  // .reduce(0, (x,y) -> x + y);
-			.reduce(0, Integer::sum);
+			// .reduce(0, Integer::sum);
 	}
 }

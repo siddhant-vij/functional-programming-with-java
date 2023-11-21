@@ -1,4 +1,4 @@
-package programming;
+package resources;
 
 import java.util.List;
 
@@ -8,7 +8,8 @@ public class FP01Structured {
 
 		List<Integer> numbers = List.of(12, 9, 13, 4, 6, 2, 4, 12, 15);
 		
-		//printAllNumbersInListStructured(numbers);
+		printAllNumbersInListStructured(numbers);
+		System.out.println("-------------------");
 		printEvenNumbersInListStructured(numbers);
 		
 

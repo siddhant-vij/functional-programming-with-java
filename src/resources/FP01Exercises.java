@@ -1,4 +1,4 @@
-package programming;
+package resources;
 
 import java.util.List;
 
@@ -7,7 +7,8 @@ public class FP01Exercises {
 	public static void main(String[] args) {
 		List<Integer> numbers = List.of(12, 9, 13, 4, 6, 2, 4, 12, 15);
 		printCubesOfOddNumbersInListFunctional(numbers);
-//		printOddNumbersInListFunctional(numbers);
+		System.out.println("-------------------");
+		printOddNumbersInListFunctional(numbers);
 		
 		List<String> courses = List.of("Spring", "Spring Boot", "API" , "Microservices","AWS", "PCF","Azure", "Docker", "Kubernetes");
 		

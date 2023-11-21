@@ -1,4 +1,4 @@
-package programming;
+package resources;
 
 import java.util.Comparator;
 import java.util.List;
@@ -71,8 +71,8 @@ public class FP04CustomClass {
 		Predicate<Course> reviewScoreGreaterThan95Predicate 
 			= course -> course.getReviewScore() > 95;
 
-		Predicate<Course> reviewScoreGreaterThan90Predicate 
-			= course -> course.getReviewScore() > 90;
+		// Predicate<Course> reviewScoreGreaterThan90Predicate 
+		// 	= course -> course.getReviewScore() > 90;
 			
 		Predicate<Course> reviewScoreLessThan90Predicate 
 			= course -> course.getReviewScore() < 90;
@@ -246,17 +246,17 @@ public class FP04CustomClass {
 		//{Cloud=[AWS, Azure, Docker, Kubernetes], FullStack=[FullStack], Microservices=[API, Microservices], Framework=[Spring, Spring Boot]}
 		
 		
-		Predicate<Course> reviewScoreGreaterThan95Predicate2 
-						= createPredicateWithCutoffReviewScore(95);
+		// Predicate<Course> reviewScoreGreaterThan95Predicate2 
+		// 				= createPredicateWithCutoffReviewScore(95);
 
-		Predicate<Course> reviewScoreGreaterThan90Predicate2 
-						= createPredicateWithCutoffReviewScore(90);
+		// Predicate<Course> reviewScoreGreaterThan90Predicate2 
+		// 				= createPredicateWithCutoffReviewScore(90);
 
 	}
 
-	private static Predicate<Course> createPredicateWithCutoffReviewScore(int cutoffReviewScore) {
-		return course -> course.getReviewScore() > cutoffReviewScore;
-	}
+	// private static Predicate<Course> createPredicateWithCutoffReviewScore(int cutoffReviewScore) {
+	// 	return course -> course.getReviewScore() > cutoffReviewScore;
+	// }
 	
 
 }

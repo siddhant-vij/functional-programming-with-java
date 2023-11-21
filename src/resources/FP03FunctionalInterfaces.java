@@ -1,11 +1,10 @@
-package programming;
+package resources;
 
 import java.util.List;
 import java.util.function.BinaryOperator;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
-import java.util.function.Supplier;
 
 public class FP03FunctionalInterfaces {
 	
@@ -61,13 +60,12 @@ public class FP03FunctionalInterfaces {
 			.forEach(sysoutConsumer2);
 
 		BinaryOperator<Integer> sumBinaryOperator = Integer::sum;
-		//BinaryOperator<Integer> sumBinaryOperator = (x,y) => x + y;
+		BinaryOperator<Integer> sumBinaryOperator1 = (x,y) -> x + y;
 		
 		
 		BinaryOperator<Integer> sumBinaryOperator2 = new BinaryOperator<Integer>() {
 			@Override
 			public Integer apply(Integer a, Integer b) {
-				// TODO Auto-generated method stub
 				return a + b;
 			}
 			

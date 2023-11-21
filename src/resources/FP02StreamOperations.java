@@ -1,4 +1,4 @@
-package programming;
+package resources;
 
 import java.util.Comparator;
 import java.util.List;

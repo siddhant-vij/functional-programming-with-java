@@ -1,4 +1,4 @@
-package programming;
+package resources;
 
 import java.util.List;
 
@@ -6,8 +6,10 @@ public class FP01Functional {
 	
 	public static void main(String[] args) {
 		List<Integer> numbers = List.of(12, 9, 13, 4, 6, 2, 4, 12, 15);
-		// printAllNumbersInListFunctional(numbers);
-		//printEvenNumbersInListFunctional(numbers);
+		printAllNumbersInListFunctional(numbers);
+		System.out.println("-------------------");
+		printEvenNumbersInListFunctional(numbers);
+		System.out.println("-------------------");
 		printSquaresOfEvenNumbersInListFunctional(numbers);
 	}
 
