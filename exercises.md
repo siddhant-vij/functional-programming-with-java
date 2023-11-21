@@ -45,17 +45,14 @@ Create a List with Even Numbers Filtered from the Numbers List
 
 Create a List with lengths of all course titles.
 
-## Exercise 12
+## Exercise 12 - FP031Exercises.java
 
 Find Functional Interface behind the second argument of reduce method. Create an implementation for the Functional Interface.
 
-int sum = numbers.stream()
-	.reduce(0, Integer::sum);
+int sum = numbers.stream().reduce(0, Integer::sum);
 
-## Exercise 13
+## Exercise 13 - FP032Exercises.java
 
 Do Behavior Parameterization for the mapping logic.
 
-List<Integer> squaredNumbers =  numbers.stream()
-									   .map(x -> x*x)
-									   .collect(Collectors.toList());
+List<Integer> squaredNumbers =  numbers.stream().map(x -> x*x).collect(Collectors.toList());
